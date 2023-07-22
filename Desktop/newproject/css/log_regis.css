@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+body{
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+    margin: auto;
+}
+.wrapper_log{
+    width: 65%;
+    padding: 20px 30px 0px 30px;
+    margin: 17px 0;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+    }
+.wrapper_regis{
+    width: 85%;
+    padding: 20px 30px 0px 30px;
+    margin: 17px 0;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+    }
+
+    ::selection{
+    color: #fff;
+    background: #5372F0;
+    }
+
+    .wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+    }
+
+    .wrapper form{
+    margin: 20px 0 40px 0;
+    }
+
+    form .field{
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    form .field .input-area{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+    }
+
+    form input{
+        width: 80%;
+        height: 100%;
+        outline: none;
+        padding-left: 45px;
+        font-size: 18px;
+        background: none;
+        caret-color: #2c98c2;
+        border-radius: 10px;
+        border: 1px solid #bfbfbf;
+        border-bottom-width: 2px;
+        transition: all 0.2s ease;
+    }
+
+    form input::placeholder{
+        color: #bfbfbf;
+        /* font-size: 19px; */
+    }
+
+    form .pass-txt{
+        text-align: left;
+        margin-top: -10px;
+    }
+
+    .wrapper a{
+        font-weight: 400;
+        color: #2c98c2;
+        text-decoration: none;
+    }
+
+    .wrapper a:hover{
+        text-decoration: none;
+        font-weight: 600;
+        color: #063547;
+    }
+
+    form input[type="submit"]{
+        height: 50px;
+        color: #fff;
+        padding: 0;
+        border: none;
+        background: rgb(6,53,71);
+        cursor: pointer;
+        border-bottom: 2px solid rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        font-size: 25px;
+    }
+
+    form input[type="submit"]:hover{
+        background : #2c98c2 ;
+        
+    }
+
+    .field label{
+        text-align: left;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .field .input-area i{
+        position: absolute;
+        top: 50%;
+        font-size: 18px;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+
+    .input-area .icon{
+        left: 15px;
+        color: #bfbfbf;
+        transition: color 0.2s ease;
+    }
+
+    .input-area .error-icon{
+        right: 15px;
+        color: #dc3545;
+    }
+
+    form input:focus ~ .icon,
+    form .field.valid .icon{
+        color: #063547;
+    }
+
+    form .field.shake input:focus ~ .icon,
+    form .field.error input:focus ~ .icon{
+        color: #bfbfbf;
+    }
+
+    form .sign-txt{
+    padding: 7px 45px;
+    }
+
+    .main_error{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_error .error_box{
+        width: 85%;
+        height: 40px;
+        color: red;
+        text-align: center;
+        padding-left: 10px;
+        margin-top: -13px;
+    }
